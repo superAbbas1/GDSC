@@ -1,0 +1,214 @@
+/*****overall body****/
+body {
+    background: linear-gradient(to right, #857d5b, #729aaa, #d6d5bd);
+}
+
+
+/****Header section****/
+.header {
+    text-align: center;
+    width: 100%;
+}
+
+.header h1 {
+    padding-top:20px;
+    font-family: 'Playfair Display', serif;
+}
+
+.header p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+}
+
+
+/****Content section****/
+
+.content {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+/****Aside section****/
+
+.aside {
+    margin: 30px 30px;
+    color: white;
+    padding: 20px 40px 0px 40px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 3px black;
+}
+
+
+.aside h2 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+.aside h3{
+    font-family:cursive;
+}
+
+.aside p {
+    font-family: 'Karla', sans-serif;
+    font-weight: 500;
+}
+
+
+/******Article section*****/
+
+.article {
+    margin: 30px 30px;
+    border-radius: 30px;
+    padding: 20px 40px 0px 40px;
+    box-shadow: 0px 0px 3px black;
+}
+
+.article p {
+    font-family: 'Karla', sans-serif;
+    font-weight: 550;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-left: 25px;
+    gap: 20px;
+}
+
+.img1 img {
+    width: 80%;
+    height: 90%;
+    border-radius: 25px;
+    transition: 0.3s;
+    opacity: 0.7;
+}
+
+.img2 img {
+    opacity: 0.7;
+    transition: 0.3s;
+    width: 80%;
+    height: 90%;
+    border-radius: 25px;
+}
+
+img:hover {
+    transition: 0.3s;
+    transform: translateY(-2%);
+    box-shadow: 1px 1px 10px black;
+    opacity: 1;
+}
+
+
+/****Footer section*****/
+
+.footer {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.copyright {
+    padding: 10px 0px 0px 30px;
+    font-family: 'Karla', sans-serif;
+    color: rgb(102, 102, 102);
+    text-align: right;
+    padding-right: 30px;
+}
+
+.links {
+    padding-left: 30px;
+    text-align: left;
+    font-family: 'Karla', sans-serif;
+}
+
+.links i {
+    padding: 0px 10px;
+    color: rgb(180, 180, 180);
+    transition: 0.2s ease;
+}
+
+.fa-facebook:hover {
+    color: blue;
+    transition: 0.2s ease;
+}
+
+.fa-instagram:hover {
+    transition: 0.2s ease;
+    color: rgb(255, 0, 149)
+}
+
+.fa-linkedin:hover {
+    transition: 0.2s ease;
+    color: blue;
+}
+
+.fa-x-twitter:hover {
+    transition: 0.2s ease;
+    color: black;
+}
+
+
+
+/****for responsiveness****/
+
+/****For XL laptop screens****/
+@media screen and (min-width:1440px){
+    .rec1{
+        padding-top:0px;
+    }
+
+    .images{
+        padding: 10px 0 10px 30px;
+    }
+}
+
+
+/***for large laptop screens***/
+
+@media screen and (min-width:1024px) and (max-width:1439px){
+    .content{
+        padding-top:0px;
+    }
+    .rec1{
+        padding-top: 0px;
+    }
+
+    img{
+        width:280px;
+        height: 200px;
+    }
+}
+
+/***for normal laptop screens***/
+
+@media screen and (min-width:768px) and (max-width:1024px){
+    .content{
+        grid-template-columns: auto;
+    }
+    
+    .images{
+       padding-left:50px; 
+    }
+}
+
+
+/*****for shorter than normal laptop screens****/
+
+@media screen and (min-width:320px) and (max-width:768px){
+    .content{
+        grid-template-columns: auto;
+    }
+    
+    .img2 img{
+        display: none;
+    }
+
+    .img1 img{
+        width: 100%;
+    }
+
+    .footer{
+        grid-template-columns: auto;
+        text-align: center;
+        justify-content: center;
+    }
+}
